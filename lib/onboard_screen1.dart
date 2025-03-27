@@ -1,22 +1,20 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class OnboardScreen1 extends StatefulWidget {
-  const OnboardScreen1({super.key});
+class OnboardScreen1 extends StatelessWidget {
+  final _controller = PageController();
 
-  @override
-  State<OnboardScreen1> createState() => _OnboardScreen1State();
-}
+  OnboardScreen1({super.key});
 
-class _OnboardScreen1State extends State<OnboardScreen1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF000000),
+      backgroundColor: const Color(0xFF000000),
       body: Column(
         children: [
           SizedBox(
-            height: 700,
+            height: MediaQuery.of(context).size.height,
             child: Stack(
               children: [
                 Positioned(
@@ -24,11 +22,11 @@ class _OnboardScreen1State extends State<OnboardScreen1> {
                   left: -5,
                   child: DottedBorder(
                     borderType: BorderType.Circle,
-                    dashPattern: [10, 3],
+                    dashPattern: const [10, 3],
                     strokeWidth: 0.2,
                     radius: const Radius.circular(12),
                     padding: const EdgeInsets.all(6),
-                    color: Color(0xFFFFFFFF),
+                    color: const Color(0xFFFFFFFF),
                     child: Container(
                       width: 700,
                       height: 400,
@@ -69,7 +67,7 @@ class _OnboardScreen1State extends State<OnboardScreen1> {
                 ),
                 Positioned(
                   top: 397,
-                  right: -103,
+                  right: -90,
                   child: DottedBorder(
                     borderType: BorderType.Circle,
                     dashPattern: const [6, 2],
@@ -79,25 +77,90 @@ class _OnboardScreen1State extends State<OnboardScreen1> {
                     color: const Color(0xFFFFFFFF),
                     child: Container(
                       width: 524,
-                      height: 507,
+                      height: 490,
                       decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                         //  color: Colors.blue,
                       ),
-                      child: const Stack(
+                      child: Stack(
                         children: [
-                          Positioned(
+                          const Positioned(
                             top: 200,
                             left: 50,
                             child: SizedBox(
                               width: 424,
                               child: Text(
-                                "Find amazing people \n         around you.",
+                                "Find amazing people \n         around you",
                                 style: TextStyle(
                                   fontFamily: "WideTrial",
                                   fontSize: 30,
                                   color: Colors.yellow,
                                 ),
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            child: PageView(
+                              controller: _controller,
+                            ),
+                          ),
+                          Positioned(
+                            top: 300,
+                            left: 190,
+                            child: SmoothPageIndicator(
+                              controller: _controller,
+                              count: 3,
+                              effect: const ExpandingDotsEffect(
+                                activeDotColor: Colors.yellow,
+                                dotColor: Colors.white,
+                                dotHeight: 10,
+                                dotWidth: 10,
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            top: 350,
+                            left: 150,
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 16,
+                                vertical: 10,
+                              ),
+                              decoration: BoxDecoration(
+                                //  color: Colors.white,
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  ElevatedButton(
+                                    onPressed: () {},
+                                    style: const ButtonStyle(
+                                        backgroundColor: WidgetStatePropertyAll(
+                                            Colors.white)),
+                                    child: const Text(
+                                      "Skip",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontFamily: "WideTrial"),
+                                    ),
+                                  ),
+                                  const SizedBox(width: 16),
+                                  ElevatedButton(
+                                    onPressed: () {},
+                                    style: const ButtonStyle(
+                                        backgroundColor: WidgetStatePropertyAll(
+                                            Colors.yellow)),
+                                    child: const Text(
+                                      "Next",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: "WideTrial",
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
