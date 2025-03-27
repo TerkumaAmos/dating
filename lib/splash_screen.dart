@@ -37,15 +37,27 @@ class SplashScreen extends StatelessWidget {
                   ),
                 ),
                 Positioned(
+                  top: 180,
+                  left: 150,
+                  child: Container(
+                    width: 15,
+                    height: 40,
+                    decoration: BoxDecoration(
+                      color: Colors.yellow,
+                      shape: BoxShape.circle,
+                    ),
+                  ),
+                ),
+                Positioned(
                   top: 200,
                   right: -90,
                   child: DottedBorder(
                     borderType: BorderType.Circle,
                     dashPattern: [6, 2],
                     strokeWidth: 1,
-                    radius: Radius.circular(12),
+                    radius: const Radius.circular(12),
                     padding: const EdgeInsets.all(6),
-                    color: Color(0xFFFEDC00),
+                    color: const Color(0xFFFEDC00),
                     child: Container(
                       width: 600,
                       height: 500,
@@ -53,12 +65,27 @@ class SplashScreen extends StatelessWidget {
                         shape: BoxShape.circle,
                         //  color: Colors.blue,
                       ),
-                      child: Center(
-                        child: const Text(
-                          "data",
-                          style: TextStyle(color: Colors.yellow),
+                      child: const Center(
+                        child: Text(
+                          "String.",
+                          style: TextStyle(
+                            fontSize: 30,
+                            color: Colors.yellow,
+                          ),
                         ),
                       ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 650,
+                  left: 50,
+                  child: Container(
+                    width: 15,
+                    height: 40,
+                    decoration: const BoxDecoration(
+                      color: Colors.yellow,
+                      shape: BoxShape.circle,
                     ),
                   ),
                 ),
@@ -67,11 +94,11 @@ class SplashScreen extends StatelessWidget {
                   left: -380,
                   child: DottedBorder(
                     borderType: BorderType.Circle,
-                    dashPattern: [6, 2],
+                    dashPattern: const [6, 2],
                     strokeWidth: 1,
-                    radius: Radius.circular(10),
+                    radius: const Radius.circular(10),
                     padding: const EdgeInsets.all(3),
-                    color: Color(0xFFFEDC00),
+                    color: const Color(0xFFFEDC00),
                     child: Container(
                       width: 500,
                       height: 400,
