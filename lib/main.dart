@@ -1,4 +1,6 @@
+import 'package:dating_app/onboard_Screen3.dart';
 import 'package:dating_app/onboard_screen1.dart';
+import 'package:dating_app/onboard_screen2.dart';
 import 'package:dating_app/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: OnboardScreen1(),
+      home: OnboardScreen3(),
     );
   }
 }

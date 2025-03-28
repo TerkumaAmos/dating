@@ -2,10 +2,10 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class OnboardScreen1 extends StatelessWidget {
+class OnboardScreen2 extends StatelessWidget {
   final _controller = PageController();
 
-  OnboardScreen1({super.key});
+  OnboardScreen2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -43,19 +43,26 @@ class OnboardScreen1 extends StatelessWidget {
                   child: Image(
                     width: 220.91,
                     height: 380.98,
-                    image: AssetImage("assets/img4.png"),
+                    image: AssetImage("assets/img2.png"),
                   ),
                 ),
                 const Positioned(
                   top: 131,
                   left: -20,
                   child: Image(
-                    image: AssetImage("assets/img8.png"),
+                    image: AssetImage("assets/img7.png"),
+                  ),
+                ),
+                const Positioned(
+                  top: 250,
+                  left: -7,
+                  child: Image(
+                    image: AssetImage("assets/img3.png"),
                   ),
                 ),
                 Positioned(
-                  top: 118,
-                  left: 256,
+                  top: 540,
+                  left: 260,
                   child: Container(
                     width: 12,
                     height: 12,
@@ -90,7 +97,7 @@ class OnboardScreen1 extends StatelessWidget {
                             child: SizedBox(
                               width: 424,
                               child: Text(
-                                "Find amazing people \n         around you",
+                                "          Find your \n      Perfect match",
                                 style: TextStyle(
                                   fontFamily: "WideTrial",
                                   fontSize: 30,

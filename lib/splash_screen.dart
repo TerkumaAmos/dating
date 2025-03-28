@@ -21,8 +21,8 @@ class SplashScreen extends StatelessWidget {
                   left: -5,
                   child: DottedBorder(
                     borderType: BorderType.Circle,
-                    dashPattern: [6, 3],
-                    strokeWidth: 1,
+                    dashPattern: [10, 3],
+                    strokeWidth: 0.2,
                     radius: Radius.circular(12),
                     padding: EdgeInsets.all(6),
                     color: Color(0xFFFEDC00),
@@ -53,8 +53,8 @@ class SplashScreen extends StatelessWidget {
                   right: -90,
                   child: DottedBorder(
                     borderType: BorderType.Circle,
-                    dashPattern: [6, 2],
-                    strokeWidth: 1,
+                    dashPattern: [10, 3],
+                    strokeWidth: 0.2,
                     radius: const Radius.circular(12),
                     padding: const EdgeInsets.all(6),
                     color: const Color(0xFFFEDC00),
@@ -70,6 +70,7 @@ class SplashScreen extends StatelessWidget {
                           "String.",
                           style: TextStyle(
                             fontSize: 30,
+                            fontFamily: "WideTrial",
                             color: Colors.yellow,
                           ),
                         ),
@@ -94,8 +95,8 @@ class SplashScreen extends StatelessWidget {
                   left: -380,
                   child: DottedBorder(
                     borderType: BorderType.Circle,
-                    dashPattern: const [6, 2],
-                    strokeWidth: 1,
+                    dashPattern: const [10, 3],
+                    strokeWidth: 0.2,
                     radius: const Radius.circular(10),
                     padding: const EdgeInsets.all(3),
                     color: const Color(0xFFFEDC00),
