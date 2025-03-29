@@ -18,14 +18,17 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   naviagateUser() {
-    Future.delayed(Duration(seconds: 3), () {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => OnboardScreen1(),
-        ),
-      );
-    });
+    Future.delayed(
+      Duration(seconds: 3),
+      () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => OnboardScreen1(),
+          ),
+        );
+      },
+    );
   }
 
   @override
