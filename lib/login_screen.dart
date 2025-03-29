@@ -86,17 +86,22 @@ class LoginScreen extends StatelessWidget {
                     style: TextStyle(fontFamily: "WideTrial", fontSize: 30),
                   ),
                 ),
-                const SizedBox(height: 100),
+                const SizedBox(height: 20),
                 RichText(
                   text: const TextSpan(
-                      style: TextStyle(fontSize: 24, color: Colors.black),
-                      children: [
-                        TextSpan(text: "data"),
-                        TextSpan(
-                            text: "   gh",
-                            style: TextStyle(fontWeight: FontWeight.bold))
-                      ]),
-                )
+                    text: "Meet thousand of people\nby creating an",
+                    style: TextStyle(
+                        fontSize: 24,
+                        color: Colors.black,
+                        fontFamily: "WideTrial"),
+                    children: [
+                      TextSpan(
+                        text: " account",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             )
           ],
