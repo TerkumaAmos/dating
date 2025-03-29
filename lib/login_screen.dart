@@ -37,6 +37,15 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
             Positioned(
+              top: 200,
+              left: 390,
+              child: SvgPicture.asset(
+                "assets/Group 1.svg",
+                width: 96,
+                height: 46.3,
+              ),
+            ),
+            Positioned(
               top: 42,
               left: 53,
               child: Container(
@@ -51,23 +60,13 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: 420,
-              left: 53,
+              top: 360,
+              left: -23,
               child: SvgPicture.asset(
                 "assets/lol.svg",
-                width: 12,
-                height: 12,
+                width: 94,
+                height: 21.62,
               ),
-              // child: Container(
-              //   width: 12,
-              //   height: 12,
-              //   decoration: const BoxDecoration(
-              //     shape: BoxShape.circle,
-              //     color: Color(
-              //       0xFFFEDC00,
-              //     ),
-              //   ),
-              // ),
             ),
             Positioned(
               top: 354,
