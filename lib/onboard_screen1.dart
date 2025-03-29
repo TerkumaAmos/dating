@@ -91,6 +91,8 @@ class OnboardScreen1 extends StatelessWidget {
                               width: 424,
                               child: Text(
                                 "Find amazing people \n         around you",
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
                                 style: TextStyle(
                                   fontFamily: "WideTrial",
                                   fontSize: 30,

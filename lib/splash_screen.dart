@@ -1,8 +1,32 @@
+import 'package:dating_app/login_screen.dart';
+import 'package:dating_app/onboard_screen1.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    naviagateUser();
+    super.initState();
+  }
+
+  naviagateUser() {
+    Future.delayed(Duration(seconds: 3), () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => OnboardScreen1(),
+        ),
+      );
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

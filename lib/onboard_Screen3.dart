@@ -22,7 +22,7 @@ class OnboardScreen3 extends StatelessWidget {
                   left: -5,
                   child: DottedBorder(
                     borderType: BorderType.Circle,
-                    dashPattern: const [10, 3],
+                    dashPattern: const [10, 6],
                     strokeWidth: 0.2,
                     radius: const Radius.circular(12),
                     padding: const EdgeInsets.all(6),
@@ -77,7 +77,7 @@ class OnboardScreen3 extends StatelessWidget {
                   right: -90,
                   child: DottedBorder(
                     borderType: BorderType.Circle,
-                    dashPattern: const [6, 2],
+                    dashPattern: const [6, 6],
                     strokeWidth: 0.2,
                     radius: const Radius.circular(12),
                     padding: const EdgeInsets.all(6),

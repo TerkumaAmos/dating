@@ -1,3 +1,4 @@
+import 'package:dating_app/login_screen.dart';
 import 'package:dating_app/onboard_Screen3.dart';
 import 'package:dating_app/onboard_screen1.dart';
 import 'package:dating_app/onboard_screen2.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: OnboardScreen3(),
+      home: SplashScreen(),
     );
   }
 }
