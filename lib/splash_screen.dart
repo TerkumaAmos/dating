@@ -1,5 +1,6 @@
 import 'package:dating_app/login_screen.dart';
 import 'package:dating_app/onboard_screen1.dart';
+import 'package:dating_app/onboard_screen2.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 
@@ -24,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => OnboardScreen1(),
+            builder: (context) => LoginScreen(),
           ),
         );
       },

@@ -77,6 +77,23 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
             ),
+            Column(
+              children: [
+                SizedBox(height: 180),
+                Center(
+                  child: Text(
+                    "String.",
+                    style: TextStyle(fontFamily: "WideTrial", fontSize: 30),
+                  ),
+                ),
+                SizedBox(height: 190),
+                Center(
+                  child: RichText(
+                    text: const TextSpan(text: "ghjbhbj"),
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
