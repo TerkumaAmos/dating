@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   naviagateUser() {
     Future.delayed(
-      Duration(seconds: 3),
+      const Duration(seconds: 3),
       () {
         Navigator.push(
           context,
@@ -48,11 +48,11 @@ class _SplashScreenState extends State<SplashScreen> {
                   left: -5,
                   child: DottedBorder(
                     borderType: BorderType.Circle,
-                    dashPattern: [10, 3],
+                    dashPattern: const [10, 3],
                     strokeWidth: 0.2,
-                    radius: Radius.circular(12),
-                    padding: EdgeInsets.all(6),
-                    color: Color(0xFFFEDC00),
+                    radius: const Radius.circular(12),
+                    padding: const EdgeInsets.all(6),
+                    color: const Color(0xFFFEDC00),
                     child: Container(
                       width: 750,
                       height: 440,
@@ -69,7 +69,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   child: Container(
                     width: 15,
                     height: 40,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.yellow,
                       shape: BoxShape.circle,
                     ),
@@ -80,7 +80,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   right: -90,
                   child: DottedBorder(
                     borderType: BorderType.Circle,
-                    dashPattern: [10, 3],
+                    dashPattern: const [10, 3],
                     strokeWidth: 0.2,
                     radius: const Radius.circular(12),
                     padding: const EdgeInsets.all(6),
