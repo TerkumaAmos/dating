@@ -102,8 +102,55 @@ class LoginScreen extends StatelessWidget {
                     ],
                   ),
                 ),
+                const SizedBox(height: 320),
+                Container(
+                  height: 50,
+                  width: 300,
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: const WidgetStatePropertyAll(
+                        Colors.yellow,
+                      ),
+                      shape: WidgetStatePropertyAll(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                      ),
+                    ),
+                    onPressed: () {},
+                    child: const Text(
+                      "Create an account",
+                      style: TextStyle(
+                        fontFamily: "wideTrial",
+                        color: Colors.white,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 39),
+                Container(
+                  height: 50,
+                  width: 300,
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor: const WidgetStatePropertyAll(
+                          Colors.black,
+                        ),
+                        shape: WidgetStatePropertyAll(RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)))),
+                    onPressed: () {},
+                    child: const Text(
+                      "Sign in",
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontFamily: "WideTrial",
+                          color: Colors.white),
+                    ),
+                  ),
+                ),
               ],
-            )
+            ),
           ],
         ),
       ),
