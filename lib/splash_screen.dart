@@ -1,3 +1,4 @@
+import 'package:dating_app/create_account_screen.dart';
 import 'package:dating_app/login_screen.dart';
 import 'package:dating_app/onboard_screen1.dart';
 import 'package:dating_app/onboard_screen2.dart';
@@ -25,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => LoginScreen(),
+            builder: (context) => CreateAccountScreen(),
           ),
         );
       },
