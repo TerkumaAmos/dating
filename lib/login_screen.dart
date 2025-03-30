@@ -153,11 +153,15 @@ class LoginScreen extends StatelessWidget {
                   width: 300,
                   child: ElevatedButton(
                     style: ButtonStyle(
-                        backgroundColor: const WidgetStatePropertyAll(
-                          Colors.black,
+                      backgroundColor: const WidgetStatePropertyAll(
+                        Colors.black,
+                      ),
+                      shape: WidgetStatePropertyAll(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
                         ),
-                        shape: WidgetStatePropertyAll(RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)))),
+                      ),
+                    ),
                     onPressed: () {},
                     child: const Text(
                       "Sign in",
