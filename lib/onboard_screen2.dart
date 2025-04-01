@@ -24,7 +24,7 @@ class OnboardScreen2 extends StatelessWidget {
                     borderType: BorderType.Circle,
                     dashPattern: const [10, 3],
                     strokeWidth: 0.2,
-                    radius: const Radius.circular(12),
+                    radius:  Radius.circular(12),
                     padding: const EdgeInsets.all(6),
                     color: Colors.yellow,
                     child: Container(
