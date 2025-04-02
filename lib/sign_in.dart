@@ -207,7 +207,24 @@ class _SignInState extends State<SignIn> {
                   ],
                 ),
                 SizedBox(height: 30),
-                SvgPicture.asset('assets/Group 10.svg')
+                SvgPicture.asset('assets/Group 10.svg'),
+                SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Text(
+                      "Don't have an account?",
+                      style: TextStyle(fontFamily: 'WideTrial', fontSize: 10),
+                    ),
+                    Text(
+                      "Sign up",
+                      style: TextStyle(
+                          fontFamily: 'WideTrial',
+                          fontSize: 10,
+                          color: Color(0xFFFEDC00)),
+                    ),
+                  ],
+                )
               ],
             ),
           ],
