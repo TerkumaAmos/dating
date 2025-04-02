@@ -1,8 +1,18 @@
+import 'package:dating_app/app_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class SignIn extends StatelessWidget {
+class SignIn extends StatefulWidget {
   const SignIn({super.key});
+
+  @override
+  State<SignIn> createState() => _SignInState();
+}
+
+class _SignInState extends State<SignIn> {
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+  bool? isChecked = false;
 
   @override
   Widget build(BuildContext context) {
@@ -121,25 +131,69 @@ class SignIn extends StatelessWidget {
                 SizedBox(height: 56),
                 Container(
                   height: 56,
-                  width: 343,
+                  width: 353,
                   decoration: BoxDecoration(),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Email",
-                      prefixIcon: Icon(Icons.mail),
-                      border: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            color: Colors.black,
-                          ),
-                          borderRadius: BorderRadius.circular(20)),
-                    ),
+                  child: AppTextField(
+                    prefixIcon: Icon(Icons.mail),
+                    hintText: "Email",
+                    controller: emailController,
                   ),
                 ),
+                SizedBox(height: 20),
+                Container(
+                  height: 56,
+                  width: 353,
+                  child: Password(
+                    passwordController: passwordController,
+                  ),
+                )
               ],
             )
           ],
         ),
       ),
+    );
+  }
+}
+
+class Password extends StatefulWidget {
+  const Password({
+    super.key,
+    required this.passwordController,
+  });
+
+  final TextEditingController passwordController;
+
+  @override
+  State<Password> createState() => _PasswordState();
+}
+
+class _PasswordState extends State<Password> {
+  bool showPassword = true;
+
+  void _toggleVisibility() {
+    setState(() {
+      showPassword = !showPassword;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AppTextField(
+      obscureText: showPassword,
+      // prefixIcon: SvgPicture.asset(
+      //   'assets/Frame.svg',
+      //   width: 10,
+      //   height: 14,
+      // ),
+      suffixIcon: IconButton(
+        icon: Icon(
+          showPassword ? Icons.visibility : Icons.visibility_off,
+        ),
+        onPressed: _toggleVisibility,
+      ),
+      hintText: 'Password',
+      controller: widget.passwordController,
     );
   }
 }
