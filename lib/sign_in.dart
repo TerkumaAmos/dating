@@ -169,7 +169,7 @@ class Password extends StatefulWidget {
 }
 
 class _PasswordState extends State<Password> {
-  bool showPassword = true;
+  bool showPassword = false;
 
   void _toggleVisibility() {
     setState(() {
