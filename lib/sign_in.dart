@@ -130,8 +130,8 @@ class _SignInState extends State<SignIn> {
                 ),
                 SizedBox(height: 56),
                 Container(
-                  height: 56,
-                  width: 353,
+                  height: 60,
+                  width: 360,
                   decoration: BoxDecoration(),
                   child: AppTextField(
                     prefixIcon: Icon(Icons.mail),
@@ -141,8 +141,8 @@ class _SignInState extends State<SignIn> {
                 ),
                 SizedBox(height: 20),
                 Container(
-                  height: 56,
-                  width: 353,
+                  height: 60,
+                  width: 360,
                   child: Password(
                     passwordController: passwordController,
                   ),
