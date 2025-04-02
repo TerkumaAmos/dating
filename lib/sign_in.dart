@@ -248,7 +248,7 @@ class Password extends StatefulWidget {
 }
 
 class _PasswordState extends State<Password> {
-  bool showPassword = false;
+  bool showPassword = true;
 
   void _toggleVisibility() {
     setState(() {
@@ -260,11 +260,11 @@ class _PasswordState extends State<Password> {
   Widget build(BuildContext context) {
     return AppTextField(
       obscureText: showPassword,
-      prefixIcon: SvgPicture.asset(
-        'assets/Frame.svg',
-        width: 10,
-        height: 14,
-      ),
+      // prefixIcon: SvgPicture.asset(
+      //   'assets/Frame.svg',
+      //   width: 10,
+      //   height: 14,
+      // ),
       suffixIcon: IconButton(
         icon: Icon(
           showPassword ? Icons.visibility : Icons.visibility_off,
