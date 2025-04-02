@@ -144,8 +144,9 @@ class OnboardScreen2 extends StatelessWidget {
                                   ElevatedButton(
                                     onPressed: () {},
                                     style: const ButtonStyle(
-                                        backgroundColor: WidgetStatePropertyAll(
-                                            Colors.white)),
+                                      backgroundColor:
+                                          WidgetStatePropertyAll(Colors.white),
+                                    ),
                                     child: const Text(
                                       "Skip",
                                       style: TextStyle(

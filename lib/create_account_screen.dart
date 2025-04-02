@@ -1,3 +1,4 @@
+import 'package:dating_app/sign_in.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -143,13 +144,45 @@ class CreateAccountScreen extends StatelessWidget {
                     ),
                     onPressed: () {},
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         SvgPicture.asset("assets/Vector1.svg"),
-                        const SizedBox(width: 30),
+                        // const SizedBox(width: 30),
                         const Text(
                           "Continue with facebook",
                           style: TextStyle(
                               color: Colors.black, fontFamily: "WideTrial"),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 20),
+                Container(
+                  height: 50,
+                  width: 300,
+                  child: ElevatedButton(
+                    style: const ButtonStyle(
+                      side: WidgetStatePropertyAll(
+                        BorderSide(
+                          color: Colors.black,
+                        ),
+                      ),
+                      backgroundColor: WidgetStatePropertyAll(
+                        Colors.transparent,
+                      ),
+                    ),
+                    onPressed: () {},
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SvgPicture.asset("assets/Group.svg"),
+                        const Text(
+                          "Continue with Google",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontFamily: 'WideTrial',
+                          ),
                         ),
                       ],
                     ),
