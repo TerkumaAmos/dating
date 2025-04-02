@@ -146,9 +146,70 @@ class _SignInState extends State<SignIn> {
                   child: Password(
                     passwordController: passwordController,
                   ),
-                )
+                ),
+                SizedBox(height: 2),
+                Row(
+                  //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      padding: EdgeInsets.only(left: 30),
+                      child: SvgPicture.asset(
+                        "assets/Rectangle 32.svg",
+                      ),
+                    ),
+                    SizedBox(width: 10),
+                    Text(
+                      "Remember me",
+                      style: TextStyle(fontFamily: "WideTrial"),
+                    ),
+                    SizedBox(width: 100),
+                    Text(
+                      "Forgot password?",
+                      style: TextStyle(fontFamily: "WideTrial", fontSize: 10),
+                    )
+                  ],
+                ),
+                SizedBox(height: 160),
+                Container(
+                  height: 56,
+                  width: 360,
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: WidgetStatePropertyAll(
+                        Color(0xFFFEDC00),
+                      ),
+                    ),
+                    onPressed: () {},
+                    child: Text(
+                      "Sign in",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: "WideTrial",
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 30),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SvgPicture.asset(
+                      'assets/Vectors 3.svg',
+                    ),
+                    SizedBox(width: 10),
+                    Text(
+                      "or continue with",
+                      style: TextStyle(fontFamily: 'WideTrial', fontSize: 10),
+                    ),
+                    SvgPicture.asset(
+                      'assets/Vectors 3.svg',
+                    ),
+                  ],
+                ),
+                SizedBox(height: 30),
+                SvgPicture.asset('assets/Group 10.svg')
               ],
-            )
+            ),
           ],
         ),
       ),
@@ -181,11 +242,11 @@ class _PasswordState extends State<Password> {
   Widget build(BuildContext context) {
     return AppTextField(
       obscureText: showPassword,
-      // prefixIcon: SvgPicture.asset(
-      //   'assets/Frame.svg',
-      //   width: 10,
-      //   height: 14,
-      // ),
+      prefixIcon: SvgPicture.asset(
+        'assets/Frame.svg',
+        width: 10,
+        height: 14,
+      ),
       suffixIcon: IconButton(
         icon: Icon(
           showPassword ? Icons.visibility : Icons.visibility_off,
