@@ -136,6 +136,7 @@ class _SignInState extends State<SignIn> {
                   child: AppTextField(
                     prefixIcon: Icon(Icons.mail),
                     hintText: "Email",
+                    hintStyle: TextStyle(fontFamily: "WideTrial"),
                     controller: emailController,
                   ),
                 ),
@@ -271,6 +272,7 @@ class _PasswordState extends State<Password> {
         onPressed: _toggleVisibility,
       ),
       hintText: 'Password',
+      hintStyle: TextStyle(fontFamily: "WideTrial"),
       controller: widget.passwordController,
     );
   }

@@ -8,6 +8,7 @@ class AppTextField extends StatelessWidget {
     this.suffixIcon,
     this.obscureText = false,
     this.prefixIcon,
+    this.hintStyle,
   });
 
   final String? hintText;
@@ -15,7 +16,7 @@ class AppTextField extends StatelessWidget {
   final TextEditingController controller;
   final bool obscureText;
   final Widget? prefixIcon;
-
+  final TextStyle? hintStyle;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -34,6 +35,7 @@ class AppTextField extends StatelessWidget {
             ),
           ),
           hintText: hintText,
+          hintStyle: hintStyle,
           suffixIcon: suffixIcon,
           prefixIcon: prefixIcon,
           contentPadding: const EdgeInsets.symmetric(
