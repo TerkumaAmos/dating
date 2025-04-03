@@ -1,9 +1,16 @@
+import 'package:dating_app/app_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class OptField extends StatelessWidget {
+class OptField extends StatefulWidget {
   const OptField({super.key});
 
+  @override
+  State<OptField> createState() => _OptFieldState();
+}
+
+class _OptFieldState extends State<OptField> {
+  final namecontroller = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -107,6 +114,16 @@ class OptField extends StatelessWidget {
                     fontSize: 20,
                   ),
                 ),
+                SizedBox(height: 10),
+                Container(
+                  height: 56,
+                  width: 350,
+                  child: AppTextField(
+                    controller: namecontroller,
+                    hintText: "Enter your user name",
+                    hintStyle: TextStyle(fontFamily: "WideTrial", fontSize: 10),
+                  ),
+                )
               ],
             )
           ],
