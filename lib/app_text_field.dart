@@ -39,11 +39,11 @@ class AppTextField extends StatelessWidget {
           suffixIcon: suffixIcon,
           prefixIcon: prefixIcon,
           prefixIconConstraints: BoxConstraints(
-            minWidth: 20, // Adjust as needed
-            minHeight: 14, // Match your desired height
-            maxWidth: 20, // Adjust as needed
-            maxHeight: 14, // Match your desired height
-          ),
+              // minWidth: 20, // Adjust as needed
+              // minHeight: 14, // Match your desired height
+              // maxWidth: 20, // Adjust as needed
+              // maxHeight: 14, // Match your desired height
+              ),
           contentPadding: const EdgeInsets.symmetric(
             vertical: 4.0,
             horizontal: 10.0,

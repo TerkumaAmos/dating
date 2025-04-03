@@ -147,7 +147,13 @@ class _EnterNumState extends State<EnterNum> {
                     width: 360,
                     decoration: BoxDecoration(),
                     child: AppTextField(
-                      prefixIcon: Icon(Icons.mail),
+                      prefixIcon: Padding(
+                        padding: const EdgeInsets.only(right: 10.0, left: 10),
+                        child: Icon(
+                          Icons.mail,
+                          size: 16,
+                        ),
+                      ),
                       hintText: "patrickhale@gmail.com",
                       hintStyle: TextStyle(fontFamily: "WideTrial"),
                       controller: emailController,
@@ -218,9 +224,8 @@ class _PasswordState extends State<Password> {
   Widget build(BuildContext context) {
     return AppTextField(
       obscureText: showPassword,
-      prefixIcon: SizedBox(
-        height: 14,
-        width: 10,
+      prefixIcon: Padding(
+        padding: const EdgeInsets.only(right: 10.0, left: 10),
         child: SvgPicture.asset(
           'assets/Frame.svg',
           width: 10,
