@@ -31,6 +31,10 @@ class _SignInState extends State<SignIn> {
               stops: [0.2, 0.7, 1.0],
             ),
           ),
+          width: double.infinity,
+          constraints: BoxConstraints(
+            minHeight: MediaQuery.of(context).size.height,
+          ),
           child: Stack(
             children: [
               Positioned(
