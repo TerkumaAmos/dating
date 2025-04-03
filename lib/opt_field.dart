@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class OptField extends StatelessWidget {
   const OptField({super.key});
@@ -51,6 +52,27 @@ class OptField extends StatelessWidget {
                   ),
                   shape: BoxShape.circle,
                 ),
+              ),
+            ),
+            Positioned(
+              top: 42,
+              left: 53,
+              child: Container(
+                width: 12,
+                height: 12,
+                decoration: BoxDecoration(
+                  color: Color(
+                    0xFFFEDC00,
+                  ),
+                  shape: BoxShape.circle,
+                ),
+              ),
+            ),
+            Positioned(
+              top: 25,
+              left: 63,
+              child: SvgPicture.asset(
+                'assets/Group 2.svg',
               ),
             ),
           ],
