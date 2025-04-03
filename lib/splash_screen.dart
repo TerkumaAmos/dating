@@ -1,4 +1,5 @@
 import 'package:dating_app/create_account_screen.dart';
+import 'package:dating_app/enter_num.dart';
 import 'package:dating_app/login_screen.dart';
 import 'package:dating_app/onboard_screen1.dart';
 import 'package:dating_app/onboard_screen2.dart';
@@ -27,7 +28,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const SignIn(),
+            builder: (context) => const EnterNum(),
           ),
         );
       },
