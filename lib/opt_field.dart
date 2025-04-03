@@ -70,11 +70,45 @@ class OptField extends StatelessWidget {
             ),
             Positioned(
               top: 25,
-              left: 63,
+              left: 40,
               child: SvgPicture.asset(
                 'assets/Group 2.svg',
               ),
             ),
+            Positioned(
+              top: 75,
+              left: 23,
+              child: SvgPicture.asset(
+                'assets/Frame (1).svg',
+              ),
+            ),
+            Positioned(
+              left: 367,
+              top: 521,
+              child: SvgPicture.asset(
+                'assets/Group 1.svg',
+              ),
+            ),
+            Column(
+              children: [
+                SizedBox(height: 100),
+                Center(
+                  child: SvgPicture.asset(
+                    'assets/Group 20.svg',
+                    width: 50.7,
+                    height: 66.07,
+                  ),
+                ),
+                SizedBox(height: 20),
+                Text(
+                  "Enter your user name",
+                  style: TextStyle(
+                    fontFamily: "WideTrial",
+                    fontSize: 20,
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
