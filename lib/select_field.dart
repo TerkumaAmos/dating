@@ -53,10 +53,24 @@ class SelectFieldPage extends StatelessWidget {
             ),
             Positioned(
               top: 435,
-              left: 72,
+              left: 42,
               child: Container(
                 width: 22,
                 height: 22,
+                decoration: BoxDecoration(
+                  color: Color(
+                    0xFFFEDC00,
+                  ),
+                  shape: BoxShape.circle,
+                ),
+              ),
+            ),
+            Positioned(
+              top: 72,
+              left: 330,
+              child: Container(
+                width: 30,
+                height: 30,
                 decoration: BoxDecoration(
                   color: Color(
                     0xFFFEDC00,
@@ -102,25 +116,52 @@ class SelectFieldPage extends StatelessWidget {
                       svgContent: SvgPicture.asset(
                         'assets/Mary.svg',
                         width: 30,
-                        height: 10,
+                        height: 20,
                       ),
                     ),
                     CircleAvatarField(
                       svgContent: SvgPicture.asset(
                         'assets/Mary.svg',
                         width: 30,
-                        height: 10,
+                        height: 20,
                       ),
                     ),
                     CircleAvatarField(
                       svgContent: SvgPicture.asset(
                         'assets/Mary.svg',
                         width: 30,
-                        height: 10,
+                        height: 20,
                       ),
                     ),
                   ],
-                )
+                ),
+                SizedBox(height: 40),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    CircleAvatarField(
+                      svgContent: SvgPicture.asset(
+                        'assets/Mary.svg',
+                        width: 30,
+                        height: 20,
+                      ),
+                    ),
+                    CircleAvatarField(
+                      svgContent: SvgPicture.asset(
+                        'assets/Mary.svg',
+                        width: 30,
+                        height: 20,
+                      ),
+                    ),
+                    CircleAvatarField(
+                      svgContent: SvgPicture.asset(
+                        'assets/Mary.svg',
+                        width: 30,
+                        height: 20,
+                      ),
+                    ),
+                  ],
+                ),
               ],
             )
           ],
