@@ -1,4 +1,5 @@
 import 'package:dating_app/birthday.dart';
+import 'package:dating_app/bottom_sheet.dart';
 import 'package:dating_app/create_account_screen.dart';
 import 'package:dating_app/enter_num.dart';
 import 'package:dating_app/gender_field.dart';
@@ -31,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const SelectFieldPage(),
+            builder: (context) => HomeScreen(),
           ),
         );
       },
