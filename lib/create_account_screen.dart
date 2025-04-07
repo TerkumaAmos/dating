@@ -176,7 +176,7 @@ class CreateAccountScreen extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        SvgPicture.asset("assets/Group.svg"),
+                        SvgPicture.asset("assets/Group (5).svg"),
                         const Text(
                           "Continue with Google",
                           style: TextStyle(

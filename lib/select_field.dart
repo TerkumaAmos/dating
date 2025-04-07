@@ -179,7 +179,12 @@ class SelectFieldPage extends StatelessWidget {
                           context: context,
                           builder: (context) {
                             return Column(
-                              children: [ListTile()],
+                              children: [
+                                _buildCustomOption(context, 'assets/Vector (3).svg', 'Camera Roll',   () {
+                                  Navigator.pop(context);
+                                  print('Camera roll selected');
+                                },)
+                              ],
                             );
                           });
                     },
@@ -199,4 +204,38 @@ class SelectFieldPage extends StatelessWidget {
       ),
     );
   }
+}
+Widget _buildCustomOption(
+    BuildContext context, String svgPath, String title, VoidCallback onTap) {
+  return GestureDetector(
+    onTap: onTap,
+    child: Container(
+      margin: EdgeInsets.symmetric(vertical: 8.0),
+      padding: EdgeInsets.all(12.0),
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.grey[300]!),
+        borderRadius: BorderRadius.circular(30.0),
+      ),
+      child: Row(
+        children: [
+          // Icon
+          SvgPicture.asset(
+            svgPath,
+            color: Colors.yellow[700], // Apply color to the SVG
+            width: 24,
+            height: 24,
+          ),
+          SizedBox(width: 16),
+          // Text
+          Text(
+            title,
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        ],
+      ),
+    ),
+  );
 }
