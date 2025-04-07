@@ -107,7 +107,8 @@ class SelectFieldPage extends StatelessWidget {
                   style: TextStyle(fontFamily: "WideTrial"),
                 ),
                 SizedBox(height: 20),
-                Text("Profile pictures leads to more matches"),
+                Text("Profile pictures leads to more matches",style: TextStyle(              fontFamily: "WideTrial",
+                ),),
                 SizedBox(height: 30),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -164,8 +165,8 @@ class SelectFieldPage extends StatelessWidget {
                 ),
                 SizedBox(height: 300),
                 Container(
-                  height: 56,
-                  width: 360,
+                  height: 50,
+                  width: 300,
                   child: ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor: WidgetStatePropertyAll(
@@ -176,14 +177,43 @@ class SelectFieldPage extends StatelessWidget {
                     ),
                     onPressed: () {
                       showModalBottomSheet(
+                          // shape: RoundedRectangleBorder(
+                          //   borderRadius:
+                          //   BorderRadius.vertical(top: Radius.circular(20.0)),
+                          // ),
                           context: context,
                           builder: (context) {
                             return Column(
+
+                              mainAxisSize: MainAxisSize.min
+                              ,
                               children: [
-                                _buildCustomOption(context, 'assets/Vector (3).svg', 'Camera Roll',   () {
+                                SvgPicture.asset("assets/Vector 9.svg"),
+                                SizedBox(height: 20),
+                                _buildCustomOption(context, 'assets/Vector (3).svg', 'Camera roll',   () {
                                   Navigator.pop(context);
                                   print('Camera roll selected');
-                                },)
+                                },
+                                ),
+                                SizedBox(height: 20),
+                                _buildCustomOption(context, 'assets/Vector (2).svg', 'Facebook',   () {
+                                  Navigator.pop(context);
+                                  print('Camera roll selected');
+                                },
+                                ),
+                                SizedBox(height: 20),
+
+                                _buildCustomOption(context, 'assets/Group (2).svg', 'Instagram',   () {
+                                  Navigator.pop(context);
+                                  print('Camera roll selected');
+                                },
+                                ),
+                                SizedBox(height: 20),
+
+                                _buildCustomOption(context, 'assets/Group (3).svg', 'Take a photo',   () {
+                                  Navigator.pop(context);
+                                  print('Camera roll selected');
+                                },),SizedBox(height: 23),
                               ],
                             );
                           });
@@ -210,10 +240,13 @@ Widget _buildCustomOption(
   return GestureDetector(
     onTap: onTap,
     child: Container(
-      margin: EdgeInsets.symmetric(vertical: 8.0),
-      padding: EdgeInsets.all(12.0),
+          height: 60,
+      width: 420,
+
+      margin: EdgeInsets.only(left: 10.0,right: 10),
+      padding: const EdgeInsets.only(right: 10.0, left: 10),
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey[300]!),
+        border: Border.all(color: Colors.black),
         borderRadius: BorderRadius.circular(30.0),
       ),
       child: Row(
@@ -221,7 +254,7 @@ Widget _buildCustomOption(
           // Icon
           SvgPicture.asset(
             svgPath,
-            color: Colors.yellow[700], // Apply color to the SVG
+            // color: Colors.yellow[700], // Apply color to the SVG
             width: 24,
             height: 24,
           ),
@@ -230,8 +263,8 @@ Widget _buildCustomOption(
           Text(
             title,
             style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w500,
+              fontSize: 16,
+              fontFamily: "WideTrial",
             ),
           ),
         ],

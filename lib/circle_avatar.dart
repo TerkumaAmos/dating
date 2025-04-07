@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 class CircleAvatarField extends StatelessWidget {
   // final Widget? icon;
-  // final ImageProvider? image;
+   final ImageProvider? image;
   final Widget? svgContent; // New parameter for SVG widget
 
   const CircleAvatarField(
       {super.key,
       //this.icon, this.image,
-      this.svgContent});
+      this.svgContent, this.image});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class CircleAvatarField extends StatelessWidget {
         child: CircleAvatar(
           radius: 40,
           child: svgContent, // Use SVG content or icon
-          //backgroundImage: image,
+          backgroundImage: image,
           backgroundColor: Colors.transparent,
         ),
       ),
