@@ -161,6 +161,13 @@ class AddPhotoField extends StatelessWidget {
           ],
         ),
         SizedBox(height: 300),
+
+              Container(
+                height: 56,
+                  width: 350,
+                  child: ElevatedButton(
+                    style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Color(0xFFFEDC00,),),),
+                      onPressed: (){}, child: Text("Continue")))
         ]
       ),
         ]
