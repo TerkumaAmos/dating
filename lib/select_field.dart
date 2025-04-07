@@ -190,13 +190,13 @@ class SelectFieldPage extends StatelessWidget {
                               children: [
                                 SvgPicture.asset("assets/Vector 9.svg"),
                                 SizedBox(height: 20),
-                                _buildCustomOption(context, 'assets/Vector (3).svg', 'Camera roll',   () {
+                                _buildCustomOption(context, 'assets/Group (3).svg', 'Take a photo',   () {
                                   Navigator.pop(context);
                                   print('Camera roll selected');
                                 },
                                 ),
                                 SizedBox(height: 20),
-                                _buildCustomOption(context, 'assets/Vector (2).svg', 'Facebook',   () {
+                                _buildCustomOption(context, 'assets/Vector (3).svg', 'Camera roll',   () {
                                   Navigator.pop(context);
                                   print('Camera roll selected');
                                 },
@@ -210,7 +210,7 @@ class SelectFieldPage extends StatelessWidget {
                                 ),
                                 SizedBox(height: 20),
 
-                                _buildCustomOption(context, 'assets/Group (3).svg', 'Take a photo',   () {
+                                _buildCustomOption(context, 'assets/Vector (2).svg', 'Facebook',   () {
                                   Navigator.pop(context);
                                   print('Camera roll selected');
                                 },),SizedBox(height: 23),
