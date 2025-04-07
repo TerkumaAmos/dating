@@ -162,6 +162,36 @@ class SelectFieldPage extends StatelessWidget {
                     ),
                   ],
                 ),
+                SizedBox(height: 300),
+                Container(
+                  height: 56,
+                  width: 360,
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: WidgetStatePropertyAll(
+                        Color(
+                          0xFFFEDC00,
+                        ),
+                      ),
+                    ),
+                    onPressed: () {
+                      showModalBottomSheet(
+                          context: context,
+                          builder: (context) {
+                            return Column(
+                              children: [ListTile()],
+                            );
+                          });
+                    },
+                    child: Text(
+                      'Choose',
+                      style: TextStyle(
+                        fontFamily: "WideTrial",
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
               ],
             )
           ],
