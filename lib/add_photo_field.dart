@@ -109,7 +109,7 @@ class AddPhotoField extends StatelessWidget {
           Text(
             "Profile pictures leads to more matches",
             style: TextStyle(
-              fontFamily: "WideTrial",
+              fontFamily: "New",
             ),
           ),
           SizedBox(height: 30),
