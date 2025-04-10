@@ -12,6 +12,8 @@ import 'package:dating_app/sign_in.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 
+import 'calender_page.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -33,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => AddPhotoField(),
+            builder: (context) => CalenderPage(),
           ),
         );
       },

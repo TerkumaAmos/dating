@@ -188,8 +188,11 @@ class AddPhotoField extends StatelessWidget {
               ),
             ),
           ),
-        ]),
-      ]),
-    ));
+        ],
+        ),
+      ],
+      ),
+    ),
+    );
   }
 }
