@@ -185,8 +185,8 @@ class SelectFieldPage extends StatelessWidget {
                           builder: (context) {
                             return Column(
 
-                              mainAxisSize: MainAxisSize.min
-                              ,
+                              mainAxisSize: MainAxisSize.min,
+
                               children: [
                                 SvgPicture.asset("assets/Vector 9.svg"),
                                 SizedBox(height: 20),
@@ -216,7 +216,8 @@ class SelectFieldPage extends StatelessWidget {
                                 },),SizedBox(height: 23),
                               ],
                             );
-                          });
+                          },
+                      );
                     },
                     child: Text(
                       'Choose',

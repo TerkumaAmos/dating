@@ -13,6 +13,7 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 
 import 'calender_page.dart';
+import 'learning_calendar_field.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -35,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => CalenderPage(),
+            builder: (context) => LearningCalendarField(),
           ),
         );
       },
