@@ -1,0 +1,2 @@
+/Users/user/Desktop/T.E.C.H_uma/dating_app/android/app/.cxx/Debug/3jw6n94z/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/user/Desktop/T.E.C.H_uma/dating_app/android/app/.cxx/Debug/3jw6n94z/armeabi-v7a/CMakeFiles/rebuild_cache.dir

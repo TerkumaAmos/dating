@@ -3,12 +3,13 @@ import 'package:flutter_svg/svg.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 import 'circle_avatar.dart';
+
 class CalenderPage extends StatelessWidget {
   const CalenderPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Container(
           decoration: const BoxDecoration(
@@ -27,184 +28,186 @@ class CalenderPage extends StatelessWidget {
           constraints: BoxConstraints(
             minHeight: MediaQuery.of(context).size.height,
           ),
-          child: Stack(children: [
-            Positioned(
-            top: 383,
-            left: 336,
-            child: Container(
-              width: 28,
-              height: 28,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Color(
-                  0xFFFEDC00,
-                ),
-              ),
-            ),
-          ),
-          Positioned(
-            top: 42,
-            left: 53,
-            child: Container(
-              width: 12,
-              height: 12,
-              decoration: BoxDecoration(
-                color: Color(
-                  0xFFFEDC00,
-                ),
-                shape: BoxShape.circle,
-              ),
-            ),
-          ),
-          Positioned(
-            top: 435,
-            left: 42,
-            child: Container(
-              width: 22,
-              height: 22,
-              decoration: BoxDecoration(
-                color: Color(
-                  0xFFFEDC00,
-                ),
-                shape: BoxShape.circle,
-              ),
-            ),
-          ),
-          Positioned(
-            top: 72,
-            left: 330,
-            child: Container(
-              width: 30,
-              height: 30,
-              decoration: BoxDecoration(
-                color: Color(
-                  0xFFFEDC00,
-                ),
-                shape: BoxShape.circle,
-              ),
-            ),
-          ),
-          Positioned(
-            top: 25,
-            left: 40,
-            child: SvgPicture.asset(
-              'assets/Group 2.svg',
-            ),
-          ),
-          Positioned(
-            top: 75,
-            left: 23,
-            child: SvgPicture.asset(
-              'assets/Frame (1).svg',
-            ),
-          ),
-          Column(children: [
-              SizedBox(height: 90),
-          Center(
-            child: SvgPicture.asset(
-              'assets/Group (4).svg',
-            ),
-          ),
-          SizedBox(height: 20),
-          Text(
-            "Add your best photos",
-            style: TextStyle(fontFamily: "WideTrial"),
-          ),
-          SizedBox(height: 20),
-          Text(
-            "Profile pictures leads to more matches",
-            style: TextStyle(
-              fontFamily: "New",
-            ),
-          ),
-          SizedBox(height: 30),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          child: Stack(
             children: [
-              CircleAvatarField(
-                svgContent: Image(
-                  image: AssetImage(
-                    'assets/Mask group (2).png',
-                  ),
-                ),
-              ),
-              CircleAvatarField(
-                svgContent: Image(
-                  image: AssetImage(
-                    'assets/Mask group (3).png',
-                  ),
-                ),
-              ),
-              CircleAvatarField(
-                svgContent: SvgPicture.asset(
-                  'assets/Mary.svg',
-                  width: 30,
-                  height: 20,
-                ),
-              ),
-            ],
-          ),
-          SizedBox(height: 40),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              CircleAvatarField(
-                svgContent: SvgPicture.asset(
-                  'assets/Mary.svg',
-                  width: 30,
-                  height: 20,
-                ),
-              ),
-              CircleAvatarField(
-                svgContent: SvgPicture.asset(
-                  'assets/Mary.svg',
-                  width: 30,
-                  height: 20,
-                ),
-              ),
-              CircleAvatarField(
-                svgContent: SvgPicture.asset(
-                  'assets/Mary.svg',
-                  width: 30,
-                  height: 20,
-                ),
-              ),
-            ],
-          ),
-          SizedBox(height: 300),
-            Container(
-              height: 56,
-              width: 350,
-              child: ElevatedButton(
-                style: ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll(
-                    Color(
+              Positioned(
+                top: 383,
+                left: 336,
+                child: Container(
+                  width: 28,
+                  height: 28,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(
                       0xFFFEDC00,
                     ),
                   ),
                 ),
-                onPressed: () {
-                  _showCalendarBottomSheet(context);
-
-                },
-                child: Text(
-                  "Continue",
-                  style: TextStyle(
-                    fontFamily: 'WideTrial',
-                    color: Colors.white,
+              ),
+              Positioned(
+                top: 42,
+                left: 53,
+                child: Container(
+                  width: 12,
+                  height: 12,
+                  decoration: BoxDecoration(
+                    color: Color(
+                      0xFFFEDC00,
+                    ),
+                    shape: BoxShape.circle,
                   ),
                 ),
               ),
-            ),
-          ],
-          ),
-          ],
+              Positioned(
+                top: 435,
+                left: 42,
+                child: Container(
+                  width: 22,
+                  height: 22,
+                  decoration: BoxDecoration(
+                    color: Color(
+                      0xFFFEDC00,
+                    ),
+                    shape: BoxShape.circle,
+                  ),
+                ),
+              ),
+              Positioned(
+                top: 72,
+                left: 330,
+                child: Container(
+                  width: 30,
+                  height: 30,
+                  decoration: BoxDecoration(
+                    color: Color(
+                      0xFFFEDC00,
+                    ),
+                    shape: BoxShape.circle,
+                  ),
+                ),
+              ),
+              Positioned(
+                top: 25,
+                left: 40,
+                child: SvgPicture.asset(
+                  'assets/Group 2.svg',
+                ),
+              ),
+              Positioned(
+                top: 75,
+                left: 23,
+                child: SvgPicture.asset(
+                  'assets/Frame (1).svg',
+                ),
+              ),
+              Column(
+                children: [
+                  SizedBox(height: 90),
+                  Center(
+                    child: SvgPicture.asset(
+                      'assets/Group (4).svg',
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  Text(
+                    "Add your best photos",
+                    style: TextStyle(fontFamily: "WideTrial"),
+                  ),
+                  SizedBox(height: 20),
+                  Text(
+                    "Profile pictures leads to more matches",
+                    style: TextStyle(
+                      fontFamily: "New",
+                    ),
+                  ),
+                  SizedBox(height: 30),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      CircleAvatarField(
+                        svgContent: Image(
+                          image: AssetImage(
+                            'assets/Mask group (2).png',
+                          ),
+                        ),
+                      ),
+                      CircleAvatarField(
+                        svgContent: Image(
+                          image: AssetImage(
+                            'assets/Mask group (3).png',
+                          ),
+                        ),
+                      ),
+                      CircleAvatarField(
+                        svgContent: SvgPicture.asset(
+                          'assets/Mary.svg',
+                          width: 30,
+                          height: 20,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 40),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      CircleAvatarField(
+                        svgContent: SvgPicture.asset(
+                          'assets/Mary.svg',
+                          width: 30,
+                          height: 20,
+                        ),
+                      ),
+                      CircleAvatarField(
+                        svgContent: SvgPicture.asset(
+                          'assets/Mary.svg',
+                          width: 30,
+                          height: 20,
+                        ),
+                      ),
+                      CircleAvatarField(
+                        svgContent: SvgPicture.asset(
+                          'assets/Mary.svg',
+                          width: 30,
+                          height: 20,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 300),
+                  Container(
+                    height: 56,
+                    width: 350,
+                    child: ElevatedButton(
+                      style: ButtonStyle(
+                        backgroundColor: WidgetStatePropertyAll(
+                          Color(
+                            0xFFFEDC00,
+                          ),
+                        ),
+                      ),
+                      onPressed: () {
+                        _showCalendarBottomSheet(context);
+                      },
+                      child: Text(
+                        "Continue",
+                        style: TextStyle(
+                          fontFamily: 'WideTrial',
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       ),
     );
   }
 }
+
 void _showCalendarBottomSheet(BuildContext context) {
   showModalBottomSheet(
     context: context,
@@ -216,7 +219,6 @@ void _showCalendarBottomSheet(BuildContext context) {
     },
   );
 }
-
 
 // Widget _buildCustomOption(
 //     BuildContext context, String svgPath, String title, VoidCallback onTap) {
@@ -254,8 +256,9 @@ void _showCalendarBottomSheet(BuildContext context) {
 //   );
 // }
 
-
 class CalendarBottomSheet extends StatefulWidget {
+  const CalendarBottomSheet({super.key});
+
   @override
   _CalendarBottomSheetState createState() => _CalendarBottomSheetState();
 }
@@ -272,7 +275,6 @@ class _CalendarBottomSheetState extends State<CalendarBottomSheet> {
         mainAxisSize: MainAxisSize.min,
         children: [
           SvgPicture.asset("assets/Vector 9.svg"),
-
           Text(
             'Birthday',
             style: TextStyle(
@@ -281,9 +283,7 @@ class _CalendarBottomSheetState extends State<CalendarBottomSheet> {
             ),
           ),
           SizedBox(height: 2),
-
           TableCalendar(
-
             firstDay: DateTime(1900), // Allow selection from 1900
             lastDay: DateTime(2100), // Allow selection up to 2100
             focusedDay: _focusedDay,
@@ -297,7 +297,8 @@ class _CalendarBottomSheetState extends State<CalendarBottomSheet> {
               });
             },
             onPageChanged: (focusedDay) {
-              _focusedDay = focusedDay; // Update focused day when changing months/years
+              _focusedDay =
+                  focusedDay; // Update focused day when changing months/years
             },
             calendarFormat: CalendarFormat.month, // Display in month view
             headerStyle: HeaderStyle(
@@ -354,5 +355,3 @@ class _CalendarBottomSheetState extends State<CalendarBottomSheet> {
     );
   }
 }
-
-
