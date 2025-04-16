@@ -108,7 +108,7 @@ class VerifyPage extends StatelessWidget {
               children: [
                 SizedBox(height: 120),
                 Center(
-                  child: SvgPicture.asset('assets/Group (6).svg'),
+                  child: SvgPicture.asset('assets/Group (14).svg'),
                 ),
                 SizedBox(height: 30),
                 Row(
@@ -133,9 +133,31 @@ class VerifyPage extends StatelessWidget {
                 SizedBox(height: 40),
                 Image(
                   image: AssetImage(
-                    'assets/Mask group (4).png',
+                    'assets/Mask group (5).png',
                   ),
                 ),
+                SizedBox(height: 60),
+                Container(
+                  width: 343,
+                  height: 56,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    border: Border.all(
+                      width: 1,
+                      color: Colors.black,
+                    ),
+                  ),
+                  child: Center(
+                    child: Text(
+                      'Open camera',
+                      style: TextStyle(
+                        fontFamily: 'WideTrial',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
+                    ),
+                  ),
+                )
               ],
             )
           ],
