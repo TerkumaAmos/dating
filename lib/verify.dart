@@ -104,9 +104,40 @@ class VerifyPage extends StatelessWidget {
                 ),
               ),
             ),
-            // Column(
-            //   children: [],
-            // )
+            Column(
+              children: [
+                SizedBox(height: 120),
+                Center(
+                  child: SvgPicture.asset('assets/Group (6).svg'),
+                ),
+                SizedBox(height: 30),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Verify',
+                      style: TextStyle(fontFamily: 'WideTrial', fontSize: 25),
+                    ),
+                    SizedBox(width: 9),
+                    SvgPicture.asset('assets/Group (7).svg')
+                  ],
+                ),
+                Text(
+                  "Verify your pictures to become a verified profile.\nOpen camera to take a selfie and image match\nthe display picture",
+                  style: TextStyle(
+                    fontFamily: 'Stinger',
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
+                  ),
+                ),
+                SizedBox(height: 40),
+                Image(
+                  image: AssetImage(
+                    'assets/Mask group (4).png',
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),

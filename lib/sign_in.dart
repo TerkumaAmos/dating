@@ -119,7 +119,7 @@ class _SignInState extends State<SignIn> {
                         "Sign in",
                         style: TextStyle(
                           color: Colors.black,
-                          fontFamily: "WideTrial",
+                          fontFamily: 'WideTrial',
                           fontSize: 24,
                         ),
                       ),
@@ -130,7 +130,10 @@ class _SignInState extends State<SignIn> {
                     padding: EdgeInsets.only(left: 29),
                     child: Text(
                       "Please enter below the details to continue",
-                      style: TextStyle(fontFamily: "WideTrial", fontSize: 12),
+                      style: TextStyle(
+                          fontFamily: 'WideTrial',
+                          fontWeight: FontWeight.bold,
+                          fontSize: 12),
                     ),
                   ),
                   SizedBox(height: 56),
@@ -139,7 +142,10 @@ class _SignInState extends State<SignIn> {
                     width: 360,
                     decoration: BoxDecoration(),
                     child: AppTextField(
-                      prefixIcon: Icon(Icons.mail),
+                      prefixIcon: Padding(
+                        padding: const EdgeInsets.only(left: 20.0),
+                        child: Icon(Icons.mail),
+                      ),
                       hintText: "Email",
                       hintStyle: TextStyle(fontFamily: "WideTrial"),
                       controller: emailController,
@@ -266,11 +272,14 @@ class _PasswordState extends State<Password> {
   Widget build(BuildContext context) {
     return AppTextField(
       obscureText: showPassword,
-      // prefixIcon: SvgPicture.asset(
-      //   'assets/Frame.svg',
-      //   width: 10,
-      //   height: 14,
-      // ),
+      prefixIcon: Padding(
+        padding: const EdgeInsets.only(left: 20.0),
+        child: SvgPicture.asset(
+          'assets/Frame.svg',
+          width: 10,
+          height: 14,
+        ),
+      ),
       suffixIcon: IconButton(
         icon: Icon(
           showPassword ? Icons.visibility : Icons.visibility_off,
