@@ -157,7 +157,28 @@ class VerifyPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                )
+                ),
+                SizedBox(height: 30),
+                Container(
+                  width: 343,
+                  height: 56,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    color: Color(
+                      0xFFFEDC00,
+                    ),
+                  ),
+                  child: Center(
+                    child: Text(
+                      'Continue',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'WideTrial',
+                        fontSize: 15,
+                      ),
+                    ),
+                  ),
+                ),
               ],
             )
           ],
