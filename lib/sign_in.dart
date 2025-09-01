@@ -122,7 +122,7 @@ class _SignInState extends State<SignIn> {
                           fontFamily: 'WideTrial',
                           fontSize: 24,
                         ),
-                      ),
+                      )
                     ),
                   ),
                   Container(
