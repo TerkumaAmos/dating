@@ -220,41 +220,6 @@ void _showCalendarBottomSheet(BuildContext context) {
   );
 }
 
-// Widget _buildCustomOption(
-//     BuildContext context, String svgPath, String title, VoidCallback onTap) {
-//   return GestureDetector(
-//     onTap: onTap,
-//     child: Container(
-//       height: 40,
-//       width: double.infinity,
-//       margin: EdgeInsets.symmetric(vertical: 4.0),
-//       padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
-//       decoration: BoxDecoration(
-//         border: Border.all(color: Colors.grey[300]!),
-//         borderRadius: BorderRadius.circular(15.0),
-//       ),
-//       child: Row(
-//         mainAxisSize: MainAxisSize.min,
-//         children: [
-//           SvgPicture.asset(
-//             svgPath,
-//             color: Colors.yellow[700],
-//             width: 20,
-//             height: 20,
-//           ),
-//           SizedBox(width: 12),
-//           Text(
-//             title,
-//             style: TextStyle(
-//               fontSize: 16,
-//               fontWeight: FontWeight.w500,
-//             ),
-//           ),
-//         ],
-//       ),
-//     ),
-//   );
-// }
 
 class CalendarBottomSheet extends StatefulWidget {
   const CalendarBottomSheet({super.key});

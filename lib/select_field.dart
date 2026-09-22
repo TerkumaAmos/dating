@@ -1,4 +1,4 @@
-import 'package:dating_app/circle_avatar.dart'; // Ensure this import is correct
+import 'package:dating_app/circle_avatar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -177,10 +177,7 @@ class SelectFieldPage extends StatelessWidget {
                     ),
                     onPressed: () {
                       showModalBottomSheet(
-                          // shape: RoundedRectangleBorder(
-                          //   borderRadius:
-                          //   BorderRadius.vertical(top: Radius.circular(20.0)),
-                          // ),
+                          
                           context: context,
                           builder: (context) {
                             return Column(
@@ -255,7 +252,6 @@ Widget _buildCustomOption(
           // Icon
           SvgPicture.asset(
             svgPath,
-            // color: Colors.yellow[700], // Apply color to the SVG
             width: 24,
             height: 24,
           ),
